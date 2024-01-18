@@ -19,8 +19,19 @@ Este repositorio contiene el código fuente para una aplicación de gestión de 
 ### Instrucciones de Ejecución Local
 1. Clona este repositorio.
 2. Navega a la carpeta "api".
-3. Ejecuta `npm install` para instalar las dependencias.
-4. Ejecuta `npm run dev` para iniciar el servidor en modo de desarrollo.
+3. Copia el archivo `.env.example` y crea un nuevo archivo llamado `.env`.
+4. Abre el archivo `.env` en un editor de texto y completa las siguientes variables con tus credenciales de la base de datos:
+
+    ```env
+    PORT=3000
+    DB_HOST=localhost
+    DB_USER=root
+    DB_PASSWORD=password
+    DB_NAME=tasks_db
+    ```
+
+5. Ejecuta `npm install` para instalar las dependencias.
+6. Ejecuta `npm run dev` para iniciar el servidor en modo de desarrollo.
 
 ### Elecciones Tecnológicas y Herramientas Utilizadas en el Backend
 - **Express:** Se eligió Express como el framework de servidor web debido a su simplicidad y flexibilidad.
